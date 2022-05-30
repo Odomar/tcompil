@@ -1,0 +1,16 @@
+/* tableaux.tpc */
+/* Test file for TPC */
+	caractere x;
+
+
+
+entier add(entier a, entier b,caractere c){
+	return a + b;
+}
+
+entier main(void){
+	entier a;
+	a = 5;
+	print(add(1,2,'a'));
+	print(a);
+} 

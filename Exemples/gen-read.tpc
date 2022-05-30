@@ -1,0 +1,10 @@
+void a(void){
+	entier i;
+	reade(i);
+	print(i);
+}
+
+void main(void){
+	entier b;
+	a();
+}

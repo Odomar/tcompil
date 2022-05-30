@@ -1,0 +1,17 @@
+/* test-table-symboles.tpc */
+
+/* Test file for simplified translator of a declaration of variables in C */
+    entier r1,b,s,c,r2 ;
+	caractere letter, digit, punct;
+
+entier main(void){
+   r1=12;
+   r1 = r2;
+   r2=0;
+   c=b-4;
+   c=r1*b;
+   r2=c/5;
+   punct='.';
+   print('c');
+   print(r1);
+}

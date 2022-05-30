@@ -1,0 +1,21 @@
+const x = 1;
+const y = 2;
+
+entier test(entier a, entier b){
+	return 1;
+}
+
+entier main(void){
+
+	entier a;
+	entier b;
+	b = 2;
+	a = 1 + y;
+	b = -x;
+	print(a);
+	print(b);
+
+	print(x);
+	print(y);
+	return 0;
+}

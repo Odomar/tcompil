@@ -1,0 +1,42 @@
+entier result;
+entier fibotab[10];
+
+entier test_global(void){
+	result = result + 5;
+	return result + 5;
+}
+
+entier add(entier a, entier b){
+	return a + b;
+}
+
+void main(void){
+	entier a;
+	entier b;
+	entier c;
+	entier i;
+	entier tab[1];
+	entier testtab;
+
+	a = 5;
+	b = 28;
+	c = 2;
+	print(add(a, add(b,  add(c, 5))));
+
+	result = 10;
+	print(test_global());
+	print(result);
+	print(test_global());
+	print(result);
+
+	i = 0;
+	fibotab[0] = 0;
+	fibotab[1] = 1;
+	print('\n');
+
+	/* testtab prend la valeur de tab[1] alors que tab[1] n'existe pas */
+	/* se comporte comme en C */
+	testtab = 10;
+	tab[1] = 5;
+	print(testtab);
+}

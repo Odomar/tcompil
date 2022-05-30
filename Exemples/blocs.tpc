@@ -1,0 +1,17 @@
+/* blocs.tpc */
+/* Test file for TPC */
+    entier quotient,reste, somme ;
+    caractere punct;
+entier main(void)  {
+   entier difference ;
+   quotient=24/12;
+   somme=24+quotient;   /* 26 */
+   difference=somme-1;
+   reste=650/(quotient+difference)%5; /* 4 */
+   print(reste);
+}
+entier assign(void) {
+   entier result;
+   result=12;
+   print(result);
+}

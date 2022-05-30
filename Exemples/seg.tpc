@@ -1,0 +1,24 @@
+/* tableaux.tpc */
+/* Test file for TPC */
+
+entier ahah;
+
+entier test3(entier a, entier b, entier c) {
+	print(a);
+	print(b);
+	print(c);
+	return 3 * (a + b + c);
+}
+
+entier test2(entier c, entier d) {
+	print(c);
+	return c;
+}
+
+entier main(void)  {
+	caractere z;
+	ahah = 4;
+	ahah = test3(ahah, test3(ahah, ahah, test3(ahah, ahah, ahah)), ahah);
+	print(ahah);
+	return 4;
+}

@@ -1,0 +1,11 @@
+void test(entier a, entier b){
+	print(a);
+	print(b);
+}
+
+
+void main(void)  {
+	entier a;
+	print(a);
+	test(1, 2);
+}

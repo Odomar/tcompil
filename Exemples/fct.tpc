@@ -1,0 +1,23 @@
+/* tableaux.tpc */
+/* Test file for TPC */
+
+entier test(entier t1, entier t2) {
+	print(t1);
+	print(t2);
+	print(t1 + t2);
+	return t1 + t2;
+}
+
+entier test2(void) {
+	print(2);
+	return 2;
+}
+
+entier main(entier a) {
+	entier result;
+	result = 3;
+	print(result);
+	result = test(test(12, 14), 98);
+	print(test(result, result));
+	return 6;
+}

@@ -1,0 +1,18 @@
+/* tableaux.tpc */
+/* Test file for TPC */
+
+entier fibo(entier n) {
+	if(n < 2) {
+		return n;
+	}
+	else {
+		return fibo(n-1) + fibo(n-2);
+	}
+}
+
+entier main(entier a) {
+	entier n;
+	n = 10;
+	print(fibo(n));
+	return 0;
+}
